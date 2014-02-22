@@ -25,15 +25,16 @@ post '/make' do
 end
 
 get '/add_item' do
-  @list = List.find(10)
+  @list = List.last
+  @item = Item.last
   erb :made_list
 end
 
 post '/add_item' do
-  puts params 
-  @item = Item.new
-  @item.name = params[:itemname]
-  @item.quantity = params[:quantity]
+  @new_item = Item.new
+  @new_item.name = params[:itemname]
+  @new_item.quantity = params[:quantity]
+  @new_item.save
 
   erb :made_list
 end
