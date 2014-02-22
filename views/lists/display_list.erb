@@ -1,0 +1,10 @@
+<h1><%= @list.name %></h1>
+<p><% @items.each do |x| %></p>
+    <%= x[0] %>
+    <%= x[1] %>
+    <% end %>
+<br>
+<a href="/lists/<%= @list.id %>">Add another Item</a>
+<a href="#">Delete an Item</a>
+<a href="#">Back to My Lists</a>
+
