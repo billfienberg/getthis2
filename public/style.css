@@ -2,7 +2,7 @@ html, button, input, select, textarea,
 .pure-g [class *= "pure-u"],
 .pure-g-r [class *= "pure-u"] {
     /* Set your content font stack here: */
-    font-family: 'Allura', 'Gabriela', serif;
+    font-family: 'Original Surfer', 'Architects Daughter', serif;
   }
 
 body {
@@ -12,15 +12,26 @@ body {
 
 h1 {
   font-size: 3em;
-  font-family: 'Gabriela';
+  font-family: 'Original Surfer';
 
 }
 
 .pure-button {
   background-color: #338800;
-  font-size: 2em;
+  font-family: 'Architects Daughter';
+  font-size: 1.5em;
 }
 
 .bump {
   margin: 1em;
+}
+
+.make {
+  font-family: 'Architects Daughter';
+  text-align: left;
+  padding: 1em;
+}
+
+.make input, .make label {
+  font-size: 1.25em;
 }
