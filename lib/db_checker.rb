@@ -1,5 +1,5 @@
-class ItemChecker
-  def exist?(id)
+require 'rubygems'
+require 'oauth2'
+require 'unirest'
+require 'pry'
 
-  end
-end
