@@ -7,9 +7,11 @@ require 'pry'
 
 
 require_relative 'lib/db_checker.rb'
-set :database, "sqlite3:///groceryapp.sqlite3"
+# set :database, "sqlite3:///groceryapp.sqlite3"
 require './models.rb'
 
+
+set :port, 9393
 enable :sessions
 
 CLIENT_ID = ENV['CLIENT_ID']

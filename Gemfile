@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'sinatra'
 gem 'rspec'
 gem 'pry'
-gem 'sqlite3'
+
 gem 'activerecord'
 gem 'sinatra-activerecord'
 gem 'oauth2'
@@ -13,5 +13,10 @@ gem 'omniauth-github'
 gem 'pony'
 
 group :development do
+  gem 'sqlite3'
   gem 'shotgun'
+end
+
+group :production do
+  gem 'pg'
 end
