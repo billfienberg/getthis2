@@ -70,7 +70,7 @@ end
 post "/user/:id/lists/new" do
   @title = "New List"
   @user = User.find(session[:user_id])
-  @list = @user.lists.create(user_id: @user.id, name: params[:listname], keyword: params[:keyword])
+  @list = @user.lists.create(user_id: @user.id, name: params[:listname], keyword: "store")
   redirect "user/lists/#{@list.id}" 
 end
 

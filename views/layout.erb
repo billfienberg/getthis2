@@ -14,6 +14,17 @@
 
         <script type="text/javascript" src="/jquery.js"></script>
         <script type="text/javascript" src="/webspeech.js"></script>
-        <script type="text/javascript" src="/script.js"></script>
+        <script>
+            var reco = new WebSpeechRecognition();
+              reco.statusText('status');
+              reco.statusImage('status_img');
+              reco.finalResults('input_field');
+
+              reco.onEnd = function() {
+                if (reco.final_transcript != '') {
+                      
+                }
+            }
+        </script>
         </body>
     </html>

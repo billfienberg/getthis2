@@ -5,9 +5,12 @@ html, button, input, select, textarea,
     font-family: 'Original Surfer', 'Architects Daughter', serif;
   }
 
+a {
+  text-decoration: none;
+  color: black;
+}
 body {
   background-image: url('brownpaper2.jpg');
-  text-align: center;
 }
 
 h1 {
@@ -34,4 +37,51 @@ h1 {
 
 .make input, .make label {
   font-size: 1.25em;
+}
+
+th, td {
+  width: 5%;
+}
+
+.gt2_table_header, .gt2_table_contents {
+  border: 1px solid black;
+  text-align: center;
+  color: black;
+  font-size: 2em;
+  font-family: Garamond; 
+}
+
+.list {
+  background-color: rgb(111,178,108);
+  height: 25px;
+  line-height: 50%;
+  margin: 0.25em;
+}
+
+.splash-container {
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+}
+
+.splash {
+  width: 80%;
+  height: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.splash-head {
+  border: 3px solid white;
+  padding: 1em;
+  border-radius: 10px;
+  font-family: "Hammersmith", Garamond;
+}
+
+.splash-subhead {
+  color: white;
+  letter-spacing: 0.05em;
+  font-family: sans-serif, Garamond; 
 }

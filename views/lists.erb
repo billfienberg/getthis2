@@ -1,6 +1,6 @@
 
 <% @user.lists.each do |x| %>
-  <a href="/user/lists/<%= x.id %>/items"><%= x.name %></a><br/>
+  <a class="pure-button list" href="/user/lists/<%= x.id %>/items"><%= x.name %></a><br/>
 <% end %>
 
 
@@ -8,4 +8,4 @@
 
 
 <br>
-<a href="/user/<%= @user.id %>/lists/new">Add a new List</a>
+<a class="pure-button" href="/user/<%= @user.id %>/lists/new">Add a new List</a>

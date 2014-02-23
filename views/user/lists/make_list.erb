@@ -1,16 +1,15 @@
 <div class="pure-g-r">
     <div class="pure-u-1">
+    <div id="status">Test</div>
         <form class="pure-form pure-form-stacked make" method="post" action"/new">
             <fieldset>
                 <label for="listname">List Name</label>
-                <input id="listname" name="listname" type="text" placeholder="List Name">
-
-                <label for="keyword">Keywords</label>
-                <input id="keyword" name="keyword" type="text" placeholder="Keyword1, Keyword2">
-                <br>
-
+                <input id="input_field" name="listname" type="text" placeholder="List Name">
                 <button type="submit" class="pure-button pure-button-primary">Create</button>
             </fieldset>
         </form>
+        <button onclick="reco.toggleStartStop()" style="border: 0; background-color:transparent">
+                <img id="status_img" src="../../../mic.gif" alt="Start"></button>
+
     </div>
 </div>

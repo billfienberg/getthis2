@@ -229,10 +229,10 @@ var status_array_en = {
 
 // Button images for various status conditions.
 var image_array_mic = {
-  'ready' : 'mic.gif',
-  'complete' : 'mic.gif',
-  'active' : 'mic-animate.gif',
-  'no-speech' : 'mic.gif',
-  'disable' : 'mic-slash.gif'
+  'ready' : '../../../mic.gif',
+  'complete' : '../../../mic.gif',
+  'active' : '../../../mic-animate.gif',
+  'no-speech' : '../../../mic.gif',
+  'disable' : '../../../mic-slash.gif'
 };
 

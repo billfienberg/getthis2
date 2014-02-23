@@ -1,11 +1,23 @@
 <h1><%= @list.name %></h1>
+<table class="pure-u-1">
+<tr><th class="gt2_table_header">Item</th>
+<th class="gt2_table_header">Qty</th>
+<th class="gt2_table_header">&#x2713</th></tr>
+
+
 <% Item.all.each do |x| %>
   <% if x.list_id == @list.id %>
-    <a href="/user/list/item/<%= x.id %>/delete"><%= x.name %></a> &nbsp; <%= x.quantity %>
+    <tr><td class="gt2_table_header"><a href="/user/list/item/<%= x.id %>/delete"><%= x.name %></a> </td>
+    <td class="gt2_table_header"><%= x.quantity %></td>
+    <td class="gt2_table_header"><input type="checkbox"></td>
+      </tr>
   <% end %>
 <% end %>
+</table>
 
-<br>
-<a href="/user/lists/<%= @list.id %>">Add another Item</a>
-<a href="/user/<%= @list.id %>/lists">Back to My Lists</a>
-<a href="/user/lists/<%= @list.id %>/share">Share this list</a>
+    
+
+<br> <br/>
+<a class="pure-button" href="/user/lists/<%= @list.id %>">Add another Item</a> <br/> <br/>
+ <a class="pure-button" href="/user/<%= @list.id %>/lists">Back to My Lists</a><br/> <br/>
+<a class="pure-button" href="/user/lists/<%= @list.id %>/share">Share this list</a>
