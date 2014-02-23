@@ -303,3 +303,52 @@ body {
   display:block;
   margin-top: 25px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#gt2_header {
+  border: 5px solid blue;
+  height: 15%;
+}
+
+#gt2_content {
+  border: 5px solid yellow;
+  height: 70%;
+}
+
+#gt2_ads {
+  border: 5px solid green;
+  height: 15%;
+}
+
+#gt2_wrapper {
+  border: 5px solid orange;
+  height: 100%;
+}
+
