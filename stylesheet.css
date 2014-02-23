@@ -292,8 +292,14 @@ body {
   border: none;
 }
 
-/*
- * -- DESKTOP (AND UP) MEDIA QUERIES --
- * On desktops and other large devices, we want to over-ride some
- * of the mobile and tablet styles.
- */
+.pure-table {
+  position: absolute;
+
+}
+.button-xlarge{
+  margin: 0 auto;
+  color: black;
+  font-family: Hammersmith One, Garamond;
+  display:block;
+  margin-top: 25px;
+}
