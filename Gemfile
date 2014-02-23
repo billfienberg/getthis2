@@ -10,6 +10,7 @@ gem 'oauth2'
 gem 'unirest'
 gem 'foreman'
 gem 'omniauth-github'
+gem 'pony'
 
 group :development do
   gem 'shotgun'

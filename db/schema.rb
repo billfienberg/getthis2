@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20140222230910) do
 
   create_table "users", force: true do |t|
     t.integer "user_num"
+    t.text    "email"
   end
 
 end

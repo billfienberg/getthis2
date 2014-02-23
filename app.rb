@@ -5,6 +5,7 @@ require 'rest-client'
 require 'json'
 require 'pry'
 
+
 require_relative 'lib/db_checker.rb'
 set :database, "sqlite3:///groceryapp.sqlite3"
 require './models.rb'
@@ -32,8 +33,9 @@ get '/callback' do
 
   @user_info = RestClient.get("https://api.github.com/user?access_token=#{access_token}")
   @user_info_id = JSON.parse(@user_info)["id"]
+  @user_info_email = JSON.parse(@user_info)["email"]
 
-  @user = User.find_or_create_by(user_num: @user_info_id)
+  @user = User.find_or_create_by(user_num: @user_info_id, email: @user_info_email)
   session[:user_id] = @user.id
   redirect "user/index"
 end
@@ -104,5 +106,22 @@ get "/user/lists/:id/items" do
   end 
 
   erb :"user/lists/display_list"
+end
+
+get "/user/lists/:id/share" do
+  @title = "Share My List"
+  @list = List.find(params[:id])
+
+  erb :"user/lists/share_list"
+end
+
+post "/user/lists/:id/share" do
+  @title = "Share My List"
+  @list = List.find(params[:id])
+  @user = User.find(session[:user_id])
+
+  @user1 = User.find_or_create_by(email: params[:email])
+
+  redirect "/user/#{@user.id}/lists"
 end
 
