@@ -304,6 +304,20 @@ body {
   margin-top: 25px;
 }
 
+#gt2_item {
+  border: 1px dashed red;
+  height: 100%;
+}
+
+#gt2_qty {
+  border: 1px dashed purple;
+  height: 100%;
+}
+
+#gt2_completed {
+  border: 1px dashed gray;
+  height: 100%;
+}
 
 
 
@@ -330,7 +344,10 @@ body {
 
 
 
-
+#gt2_wrapper {
+  border: 5px solid orange;
+  height: 100%;
+}
 
 #gt2_header {
   border: 5px solid blue;
@@ -342,13 +359,19 @@ body {
   height: 70%;
 }
 
+  .gt2_content_header {
+    height: 15%;
+    border: 2px solid purple;
+  }
+
+  .gt2_content_substance {
+    height: 85%;
+    border: 2px solid silver;
+  }
+
 #gt2_ads {
   border: 5px solid green;
   height: 15%;
 }
 
-#gt2_wrapper {
-  border: 5px solid orange;
-  height: 100%;
-}
 
