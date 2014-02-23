@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140222230910) do
+ActiveRecord::Schema.define(version: 20140223161745) do
 
   create_table "items", force: true do |t|
     t.integer "list_id"
@@ -25,9 +25,14 @@ ActiveRecord::Schema.define(version: 20140222230910) do
     t.string  "keyword"
   end
 
+  create_table "lists_users", force: true do |t|
+    t.integer "list_id"
+    t.integer "user_id"
+  end
+
   create_table "users", force: true do |t|
     t.integer "user_num"
-    t.text    "email"
+    t.string  "email"
   end
 
 end

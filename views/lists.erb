@@ -1,7 +1,11 @@
-<% List.all.each do |y| %>
- <% if y.user_id == @user.id %>
-   <p><a href="/user/lists/<%= y.id %>/items"><%= y.name %></a></p>
-  <% end %>
+
+<% @user.lists.each do |x| %>
+  <a href="/user/lists/<%= x.id %>/items"><%= x.name %></a><br/>
 <% end %>
+
+
+
+
+
 <br>
 <a href="/user/<%= @user.id %>/lists/new">Add a new List</a>
