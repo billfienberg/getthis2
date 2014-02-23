@@ -35,7 +35,12 @@ get '/callback' do
   @user_info_id = JSON.parse(@user_info)["id"]
   @user_info_email = JSON.parse(@user_info)["email"]
 
-  @user = User.find_or_create_by(user_num: @user_info_id, email: @user_info_email)
+  if User.find_by(email: @user_info_email)
+    @user = User.find_by(email: @user_info_email)
+    @user.update(user_num: @user_info_id)
+  else
+    @user = User.find_or_create_by(user_num: @user_info_id, email: @user_info_email)
+  end
   session[:user_id] = @user.id
   redirect "user/index"
 end
