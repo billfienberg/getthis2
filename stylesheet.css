@@ -323,6 +323,32 @@ body {
   font-size: 2em;
 }
 
+#gt2_list_header {
+  border:1px solid black;
+  text-align: center;
+  color: black;
+  font-family: Garamond;
+  font-size: 2em;
+}
+
+.gt2_list_name {
+  text-align: center;
+  color: black;
+  font-family: Garamond;
+}
+
+.gt2_list_name a {
+  text-decoration: none;
+  color: black;
+}
+
+.gt2_list_name button {
+  width: 50%;
+  font-size: 2em;
+  margin: auto auto auto auto;
+  display: block;
+}
+
 h3 {
   font-family: Hammersmith One, Garamond;
   text-align: center;
@@ -392,6 +418,13 @@ h3 {
   height: 15%;
 }
 
+.gt2_text_input {
+  font-family: Garamond;
+  color: black;
+  font-size: 2em;
+}
 
-
+form input {
+  text-align: center;
+}
 
