@@ -1,3 +1,9 @@
 GetThis2
-GetThis2 is a community grocery list.
-We also considered calling it WhileYoureThere or Community Shopping List. 
+
+GetThis2 is a community shopping list. It allows for a group of individuals, in a house for example, to have a list where they can all contribute. 
+
+The needs of the group are available to all members at all times without the need for calling, texting, emailing, etc. 
+
+GetThis2 incorporates two API's: GitHub login and Google Web Speech.
+
+These two API's allow the application to authenticate the user and allows the user to use their voice to add content.
