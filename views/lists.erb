@@ -1,3 +1,5 @@
 <% @all_lists.each do |x| %>
-<p><%= x.name %></p>
+<p><a href="/user/lists/<%= x.id %>/items"><%= x.name %></a></p>
 <% end %>
+
+<a href="/user/<%= @user.id %>/lists/new">Add a new List</a>
